@@ -5,13 +5,14 @@ body {
  }
 
 span{
-  color: #a05300;
-  font-weight: bold;
+  color: #202632;
+  font-weight:900;
 }
 hr{
   margin-top: 2%;
   color:#ededed;
   stroke-width: 1px;
+  width: auto;
 }
 
 h1{
@@ -23,19 +24,27 @@ a{
   color: #4c4c4c;
 }
 
+.tel{
+  color: #fff;
+}
 
 .subtS3{
-  margin-top: 25%;
-  letter-spacing: 2px;
+  margin-top: 10%;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  text-decoration: underline;
   color:#4c4c4c;
-  font-size:90%;
+  font-size:125%;
+  font-weight: 900;
+  text-align: left;
 }
+
 .parrafo3{
   text-transform: uppercase;
-  font-size:80%;
-  line-height: 98%;
-  letter-spacing: 2px;
+  font-size:85%;
+  letter-spacing: 0.2px;
+  text-align: left;
+
 }
 
 .tramite1{
@@ -43,8 +52,35 @@ a{
   margin: 20px;
   text-align: center;
 }
+
+.tramite2 {
+    margin: 12vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 5px;
+    padding: 10px;
+}
+
+.tramite3 {
+   
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5vh;
+    padding: 8vh 8vh 40vh 8vh;
+}
+
+.tramite4 {
+    margin-bottom:20vh;
+    text-align: center;
+    padding:0 8vh 8vh 8vh;
+}
+
+
 .mySlides {
   display: none;
+
 }
 
 .inputMain{
@@ -54,17 +90,23 @@ a{
   margin: 10px;
   Background-color: #e3e3e3;
   width: 40%;
+  font-size: 1.5vh;
+}
+
+
+.redbtn{
+  width: 90%;
 }
 
 .btnIniciarS{
-  width: 30%;
+  width: 35%;
   border: none;
   background-color: #5ad65b;
   padding: 10px;
   margin: 10px;
   border-radius:20px;
   color: #fff;
-  font-size:98%;
+  font-size:2.0vh;
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -75,7 +117,7 @@ a{
 }
 
 .btnRegistro{
-  width: 30%;
+  width: 35%;
   border: none;
   background-color: #d52121;
   padding: 10px;
@@ -83,7 +125,7 @@ a{
   padding: 10px;
   border-radius:20px;
   color: #fff;
-  font-size:98%;
+  font-size:2.0vh;
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -101,7 +143,7 @@ a{
   margin: 15px 30px 0px 30px;
   color: #fff;
   border: none;
-  width: 27%;
+  width:33.3%;
 
 }
 
@@ -109,46 +151,47 @@ a{
   background-color:#892525;
   color: white;
 }
-
-.column {
-  float: left;
-  width: 25%;
-  padding: 0px;
+.grid-container {
+  display: grid;
+  grid-row-gap: 5px;
+  grid-template-columns:33.3% 33.3% 33.3%;
+  padding: 10px;
+  margin: 95px;
 }
 
-.row{
-  background-color: transparent;
-   content: "";
-  display: table;
-  clear: both;
+.grid-item {
+  padding: 30px;
+  text-align: center;
 }
 
-.section3{
-  padding: 8%;
-  margin-left: 12%;
-  margin-right: 8%;
-}
-
-
-/* Style the counter cards */
 .card {
-  padding:25% 30% 35% 10%;
-  margin: 1%;
-  text-align: left;
-  background-repeat: no-repeat;
-  background-size: contain;
+    padding: 6vh 1vh 12vh 4vh;
+    margin: 1%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #c1c1c1;
+    border-width: thin;
+    border-bottom-right-radius: 50px;
+    box-shadow: 1px 1px 15px #e2e2e2;
+}
 
+.cardIcon{
+  width:45%; 
+  margin-top:-35%;
+  text-align:center;
 }
 
 .slideshow-container {
-  background-color: #000000;
+  background-color: #fff;
   position: relative;
   margin: -10px;
 
 }
 .prev, .next {
   cursor: pointer;
-  position:relative;
+  position:absolute;
   top: 50%;
   width: auto;
   padding: 16px;
@@ -161,6 +204,16 @@ a{
   user-select: none;
 }
 
+.dot {
+  height: 0.5vh;
+  width: 0.5vh;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
 .solicita{
   padding-left: 0%;
   padding-right: 0%;
@@ -168,6 +221,74 @@ a{
   margin-top: -5%;
   background-color: #f7f6fb;
   height: 10px;
+}
+
+.TramSNR{
+  background-color: #eceff4;
+  padding: 4vh;
+  
+}
+
+.TramTxt{
+  padding: 0.6vh;
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-top: -3vh;
+}
+
+.TramTxt4{
+  padding: 0.6vh;
+  margin-top: -2vh;
+}
+
+.todoslosT{
+    background-image: radial-gradient(circle, #6d7d96, #384861);
+    text-align: center;
+}
+
+.videofin{
+  text-align:center;
+}
+
+.videoSub{
+  text-align:left;
+}
+
+.videoT1{
+  text-align:left;
+  padding-left: 8vh;
+  letter-spacing: 2px;
+}
+
+.videoBTN{
+  text-align:center;
+  font-weight: 800;
+  font-size: 1.2vh;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  letter-spacing: 2px;
+}
+
+
+.titulo3{
+  color: #fff;
+  text-align:left;
+  padding: 20vh;
+  font-weight: 400;
+}
+
+.titulo4{
+  color: #fff;
+  text-align: center;
+  font-weight: 900;
+  font-size: 30vh;
+}
+
+.span2{ 
+color:yellow;
+font-weight: 900;
 }
 
 .leftIcon {
@@ -195,7 +316,7 @@ a{
     display: inline-block;
     margin-bottom: 20px;
   }
-}
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -209,10 +330,26 @@ a{
   -webkit-animation-duration: 2.5s;
   animation-name: fade;
   animation-duration: 2.5s;
+
 }
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
 
 section p{
   color: #fff;
+}
+
+.grid-container {
+  margin-left: 10vh;
+  margin-right: 10vh;
 }
 
 .grid-contacto {
@@ -244,7 +381,7 @@ section p{
   grid-template-columns: 45% auto auto;
   padding: 14px;
   margin: -2%;
-  padding-top:1%;
+  padding-top:10vh;
   padding-bottom: 5%;
   background-color: #f7f6fb;;
 }
@@ -253,7 +390,6 @@ section p{
   padding-left: 25%;
   color: #202632;
   align-self: center;
-}
 }
 
 .grid-itemFooter3 {
@@ -264,12 +400,10 @@ section p{
   margin-top: 15%;
 }
 
-/* Responsive columns */
-
 
 .media1{
    margin-left:1%;
-   width:40%;
+   width:12vh;
 }
 
 
@@ -286,18 +420,10 @@ section p{
   margin: -10px;
   padding: 10px;
 }
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
 
 
+
+/* Responsive columns */
 
 @media screen and (max-width: 1200px) {
   .column {
@@ -310,6 +436,34 @@ section p{
     width: 90%;
   }
 
+  .tramite2 {
+    margin: 12vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+
+}
+
+.grid-container {
+
+  margin: 15px;
+}
+
+  .grid-footer {
+  display: grid;
+  grid-template-columns:auto;
+  padding: 14px;
+  margin: -2%;
+  background-color:#202632;
+  text-align: center;
+}
+
+.grid-itemFooter {
+  background-color:#202632;
+  padding: 1%;
+}
+
   .grid-footer2{
   display: grid;
   grid-template-columns:auto;
@@ -317,7 +471,7 @@ section p{
 
   .grid-itemFooter2 {
   background-color:transparent;
-  padding-left: 10%;
+  padding-left: 1%;
   width: 80%;
   text-align:center;
    
@@ -331,11 +485,26 @@ section p{
 
 .media2 {
     width: 20%;
-    margin-left: 5%;
+    margin-left: 12vh;
 }
 
 
+.grid-container {
+  display: grid;
+  grid-row-gap: 5px;
+  grid-template-columns: auto auto;
+  padding: 10px;
 }
+
+.tramite3 {
+   
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5vh;
+    padding: 8vh 8vh 20vh 8vh;
+}
+
 
 @media screen and (max-width: 600px) {
   .column {
@@ -344,8 +513,29 @@ section p{
     margin-bottom: 20px;
   }
 
-  .tram1{
-  width: 50%;
+  .tramite2 {
+    margin: 12vh;
+    text-align: center;
+    display: grid;
+     grid-template-columns:auto;
+    grid-gap: 5px;
 
 }
+  .tramite3 {
+    text-align: center;
+    display: grid;
+    grid-template-columns:auto;
+    grid-gap: 5vh;
+    padding: 8vh 8vh 0 8vh;
+}
+
+  .tram1{
+  width: 50%;
+}
+
+.grid-container {
+  display: grid;
+  grid-row-gap:1px;
+  grid-template-columns: auto;
+  padding: 10px;
 }
